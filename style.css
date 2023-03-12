@@ -1,0 +1,29 @@
+.input-styling {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.heading-style {
+  font-family: "italic";
+}
+
+.button-style {
+  background-color: antiquewhite;
+  height: 40px;
+  width: 80px;
+  color: black;
+  font-size: 26px;
+  border-radius: 5px;
+  border: 2px solid color;
+  margin: 2px;
+}
+
+.main-container {
+  border: 2px;
+  border-color: aqua;
+}
