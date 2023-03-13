@@ -1,24 +1,33 @@
-let inputEl = document.getElementById("user-input");
+let newNum = [];
 
-let first = document.getElementById("first");
-let second = document.getElementById("second");
-let third = document.getElementById("third");
-let fourth = document.getAnimations("fourth");
-let fifth = document.getElementById("fifth");
-let sixth = document.getElementById("sixth");
-let seventh = document.getAnimations("seven");
-let eigth = document.getElementById("eight");
-let ninth = document.getElementById("nine");
-let zero = document.getElementById("zero");
-
-first.onclick = function () {
-  inputEl.value = first.textContent;
+plus.onclick = function () {
+  newNum.push(parseInt(user.value));
+  user.value = "";
 };
 
-second.onclick = function () {
-  inputEl.value = second.textContent;
+minus.onclick = function () {
+  newNum.push(parseInt(user.value));
+  user.value = "";
 };
 
-let plus = document.getElementById("plus");
+equalTo.onclick = function (zackk) {
+  let secondIn = user.value;
+  newNum.push(parseInt(user.value));
 
-plus.onclick = function () {};
+  let addition = newNum[0] + newNum[1];
+  user.value = addition;
+  newNum = [];
+};
+
+clear.onclick = function () {
+  user.value = "";
+};
+
+let main = document.getElementById("main");
+on.onclick = function () {
+  main.classList.remove("close");
+};
+
+off.onclick = function () {
+  main.classList.add("close");
+};

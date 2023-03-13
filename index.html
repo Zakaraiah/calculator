@@ -14,15 +14,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main-container d-flex flex-row justify-content-center">
-      <div>
+    <div class="power">
+      <button class="button-style button1" id="on">ON</button
+      ><button class="button-style button2" id="off">OFF</button>
+    </div>
+    <div
+      class="main-container close d-flex flex-row justify-content-center"
+      id="main"
+    >
+      <div class="sub-container">
         <h1 class="heading-style" id="heading">Calculator</h1>
-        <input type="text" class="input-styling" id="user-input" />
+        <input type="text" class="input-styling" id="user" />
+
         <div>
-          <button class="button-style">%</button>
+          <button class="button-style" onclick="user.value+='%'">%</button>
           <button class="button-style">CE</button>
-          <button class="button-style">C</button>
-          <button class="button-style">Back</button>
+          <button class="button-style" id="clear">C</button>
+          <button class="button-style" id="back">Back</button>
         </div>
         <div>
           <button class="button-style" id="one">1/x</button>
@@ -35,27 +43,109 @@
           </button>
         </div>
         <div>
-          <button class="button-style" id="seven">7</button>
-          <button class="button-style" id="eight">8</button>
-          <button class="button-style" id="nine">9</button>
-          <button class="button-style" id="multiplication">x</button>
+          <button
+            class="button-style"
+            value="7"
+            id="seven"
+            onclick="user.value+='7'"
+          >
+            7
+          </button>
+          <button
+            class="button-style"
+            id="eight"
+            value="8"
+            onclick="user.value+='8'"
+          >
+            8
+          </button>
+          <button
+            class="button-style"
+            id="nine"
+            value="9"
+            onclick="user.value+='9'"
+          >
+            9
+          </button>
+          <button
+            class="button-style"
+            id="multiplication"
+            onclick="user.value+='x'"
+          >
+            x
+          </button>
         </div>
         <div>
-          <button class="button-style" id="fourth">4</button>
-          <button class="button-style" id="fifth">5</button>
-          <button class="button-style" id="sixth">6</button>
-          <button class="button-style" id="minus">-</button>
+          <button
+            class="button-style"
+            id="fourth"
+            value="4"
+            onclick="user.value+='4'"
+          >
+            4
+          </button>
+          <button
+            class="button-style"
+            id="fifth"
+            value="5"
+            onclick="user.value+='5'"
+          >
+            5
+          </button>
+          <button
+            class="button-style"
+            id="sixth"
+            value="6"
+            onclick="user.value+='6'"
+          >
+            6
+          </button>
+          <button class="button-style" id="minus" onclick="user.value+='-'">
+            -
+          </button>
         </div>
         <div>
-          <button class="button-style" id="first">1</button>
-          <button class="button-style" id="second">2</button>
-          <button class="button-style" id="third">3</button>
-          <button class="button-style" id="plus">+</button>
+          <button
+            class="button-style"
+            id="first"
+            value="1"
+            onclick="user.value+='1'"
+          >
+            1
+          </button>
+          <button
+            class="button-style"
+            id="second"
+            value="2"
+            onclick="user.value+='2'"
+          >
+            2
+          </button>
+          <button
+            class="button-style"
+            id="third"
+            value="3"
+            onclick="user.value+='3'"
+          >
+            3
+          </button>
+          <button class="button-style" id="plus" onclick="user.value+='+'">
+            +
+          </button>
         </div>
         <div>
           <button class="button-style" id="plusOrMinus">+/-</button>
-          <button class="button-style" id="zero">0</button>
-          <button class="button-style" id="dot">.</button>
+          <button
+            class="button-style"
+            id="zero"
+            value="0"
+            onclick="user.value+='0'"
+          >
+            0
+          </button>
+          <button class="button-style" id="dot" onclick="user.value+='.'">
+            .
+          </button>
           <button class="button-style" id="equalTo">=</button>
         </div>
       </div>
